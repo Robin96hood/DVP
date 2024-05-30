@@ -1,0 +1,71 @@
+query findById {
+  getTicketById(id: 3) {
+    id
+    usuario {
+      id
+      login
+      nodeId
+      avatarUrl
+      gravatarId
+      url
+      htmlUrl
+      followersUrl
+      followingUrl
+      subscriptionsUrl
+      organizationsUrl
+      gistsUrl
+      starredUrl
+      reposUrl
+      eventsUrl
+      receivedEventsUrl
+      type
+      siteAdmin
+      score
+    }
+    fechaCreacion
+    fechaActualizacion
+    estado
+  }
+}
+
+query findAll {
+  getAllTickets {
+    id
+    usuario {
+      id
+    }
+    fechaCreacion
+    fechaActualizacion
+    estado
+  }
+}
+
+mutation addTicket {
+  addTicket(
+    ticketDTO: {usuario: {id: 21323339}, fechaCreacion: "2024-05-28T00:00:00", fechaActualizacion: "2024-05-28T00:00:00", estado: "abierto"}
+  ) {
+    id
+    usuario {
+      id
+    }
+    fechaCreacion
+    fechaActualizacion
+    estado
+  }
+}
+
+mutation update {
+  updateTicket(estado: "cerrado", id: 1) {
+    id
+    usuario {
+      id
+    }
+    fechaCreacion
+    fechaActualizacion
+    estado
+  }
+}
+
+mutation deleteTicket {
+  deleteTicket(id: 3)
+}
