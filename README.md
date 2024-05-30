@@ -1,11 +1,12 @@
 # DVP
 
-> A simple Java project to procces tciket and users 
+> A simple Java project to procces ticket and users 
 > Developed by Robinson Turriago
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
+Recommended versions java 17 and gradle 8.7
 
 * [Git](http://git-scm.com/)
 * [Gradle](https://gradle.org//)
