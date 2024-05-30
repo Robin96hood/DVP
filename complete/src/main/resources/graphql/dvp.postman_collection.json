@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "814dc94b-65f1-4b93-8667-a24303d1880c",
+		"name": "dvp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23329079",
+		"_collection_link": "https://red-rocket-8877.postman.co/workspace/My-Workspace~5ced77ee-ffe7-4cf9-88df-c69a9ee23a83/collection/23329079-814dc94b-65f1-4b93-8667-a24303d1880c?action=share&source=collection_link&creator=23329079"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dvp/ticket/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dvp",
+						"ticket",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dvp/ticket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dvp",
+						"ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"id\": 13570164\r\n  },\r\n  \"fechaCreacion\": \"2024-05-28T00:00:00\",\r\n  \"fechaActualizacion\": \"2024-05-28T00:00:00\",\r\n  \"estado\": \"abierto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dvp/ticket/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dvp",
+						"ticket",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dvp/ticket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dvp",
+						"ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"id\": 13570164\r\n  },\r\n  \"fechaCreacion\": \"2024-05-28T00:00:00\",\r\n  \"fechaActualizacion\": \"2024-05-28T00:00:00\",\r\n  \"estado\": \"cerrado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dvp/ticket/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dvp",
+						"ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
