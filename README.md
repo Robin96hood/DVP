@@ -32,3 +32,7 @@ gradle clean build
 docker build -t graphql-server-0.0.1 .
 docker run --name "graphql-server-0.0.1" -it graphql-server-0.0.1
 ```
+## Resources for test use
+```bash
+complete/src/main/resources/graphql
+```
