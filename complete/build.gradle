@@ -29,6 +29,16 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+task fatJar(type: Jar) {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	manifest {
+		attributes 'Main-Class': 'RunClass'
+	}
+	from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+
+	with jar
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
